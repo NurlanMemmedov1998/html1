@@ -1,0 +1,112 @@
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+header{
+    margin: 32px;
+}
+h1{
+    font-weight: 300;
+}
+.links ul{
+    display: flex;
+    list-style: none;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 8px;
+}
+a.active{
+    border-bottom: 1px solid black;
+}
+
+.galery{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 49%;
+    padding: 16px;
+    box-sizing: border-box;
+
+}
+.card img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+.card img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.card h2{
+    margin: 8px 0 16px 0;
+    font-weight: 300;
+}
+.why{
+    width: 50%;
+    margin: 100px 200px;
+}
+.banner{
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+.message{
+    color: red;
+    font-style: italic;
+    font-size: 50px;
+    border-bottom: 1px solid black;
+    margin-top: 0px;
+    padding-bottom: 8px;
+    font-weight: 400;
+    cursor: no-drop;
+}
+.contact p{
+    margin: 0;
+    font-weight: 600;
+}
+.navbar .bar{
+    width: 36px;
+    height: 4px;
+    border-radius: 10px;
+    margin: 3px;
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .hamburger{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .navbar .hamburger{
+        display: block;
+    }
+    .links{
+        display: none;
+    }
+    .navbar h1{
+        font-size: 15px;
+    }
+    .card{
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .why{
+        width: 100%;
+        margin: 0;
+        padding: 25px;
+    }
+    .message{
+        font-size: 35px;
+    }
+
+}
